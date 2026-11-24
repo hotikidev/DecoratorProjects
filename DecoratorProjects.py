@@ -76,3 +76,53 @@ def play():
 
 
 play()
+
+
+#=================OK another one!!============
+
+def decorator(func):
+    def wrapper():
+        print('I ate chocolate number 1!')
+        func()
+        print('I ate chocolate number 2!')
+
+    return wrapper
+
+def decorator2(func):
+    def wrapper2():
+        print('I ate chocolate number 3!')
+        func()
+        print('I ate chocolate number 4!')
+
+    return wrapper2
+def decorator3(func):
+    def wrapper3():
+        print('I ate chocolate number 5!')
+        func()
+        print('I ate chocolate number 6!')
+
+    return wrapper3
+def decorator4(func):
+    def wrapper4():
+        print('I ate chocolate number 7!')
+        func()
+        print('I ate chocolate number 8!')
+
+    return wrapper4
+def decorator5(func):
+    def wrapper5():
+        print('I ate chocolate number 9!')
+        func()
+        print('I ate chocolate number 10!')
+
+    return wrapper5
+@decorator
+@decorator2
+@decorator3
+@decorator4
+@decorator5
+
+def play():
+    print('DONE!!')
+play()
+
